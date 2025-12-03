@@ -2,12 +2,12 @@
 set -euo pipefail
 
 # Creates installer for different channel versions.
-# Run this script from the local BlackHole repo's root directory.
+# Run this script from the local WhiteHole repo's root directory.
 # If this script is not executable from the Terminal, 
 # it may need execute permissions first by running this command:
 #   chmod +x create_installer.sh
 
-driverName="BlackHole"
+driverName="WhiteHole"
 devTeamID="Q5C99V536K" # ⚠️ Replace this with your own developer team ID
 notarize=true # To skip notarization, set this to false
 notarizeProfile="notarize" # ⚠️ Replace this with your own notarytool keychain profile name
@@ -15,10 +15,10 @@ notarizeProfile="notarize" # ⚠️ Replace this with your own notarytool keycha
 ############################################################################
 
 # Basic Validation
-if [ ! -d BlackHole.xcodeproj ]; then
-    echo "This script must be run from the BlackHole repo root folder."
+if [ ! -d WhiteHole.xcodeproj ]; then
+    echo "This script must be run from the WhiteHole repo root folder."
     echo "For example:"
-    echo "  cd /path/to/BlackHole"
+    echo "  cd /path/to/WhiteHole"
     echo "  ./Installer/create_installer.sh"
     exit 1
 fi
@@ -39,9 +39,9 @@ for channels in 2 16 64 128 256; do
     
     # Build
     xcodebuild \
-      -project BlackHole.xcodeproj \
+      -project WhiteHole.xcodeproj \
       -configuration Release \
-      -target BlackHole CONFIGURATION_BUILD_DIR=build \
+      -target WhiteHole CONFIGURATION_BUILD_DIR=build \
       PRODUCT_BUNDLE_IDENTIFIER=$bundleID \
       GCC_PREPROCESSOR_DEFINITIONS='$GCC_PREPROCESSOR_DEFINITIONS 
       kNumber_Of_Channels='$channels' 
@@ -50,12 +50,12 @@ for channels in 2 16 64 128 256; do
     
     # Generate a new UUID
     uuid=$(uuidgen)
-    awk '{sub(/e395c745-4eea-4d94-bb92-46224221047c/,"'$uuid'")}1' build/BlackHole.driver/Contents/Info.plist > Temp.plist
-    mv Temp.plist build/BlackHole.driver/Contents/Info.plist
+    awk '{sub(/e395c745-4eea-4d94-bb92-46224221047c/,"'$uuid'")}1' build/WhiteHole.driver/Contents/Info.plist > Temp.plist
+    mv Temp.plist build/WhiteHole.driver/Contents/Info.plist
     
     mkdir Installer/root
     driverBundleName=$driverVartiantName.driver
-    mv build/BlackHole.driver Installer/root/$driverBundleName
+    mv build/WhiteHole.driver Installer/root/$driverBundleName
     rm -r build
     
     # Sign

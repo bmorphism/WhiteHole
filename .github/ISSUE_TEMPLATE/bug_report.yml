@@ -7,11 +7,11 @@ body:
   attributes:
     label: Please Confirm
     options:
-      - label: I have read the **[FAQ](https://github.com/ExistentialAudio/BlackHole#faq) and [Wiki](https://github.com/ExistentialAudio/BlackHole/wiki)** where most common issues can be resolved
+      - label: I have read the **[FAQ](https://github.com/ExistentialAudio/WhiteHole#faq) and [Wiki](https://github.com/ExistentialAudio/WhiteHole/wiki)** where most common issues can be resolved
         required: true
-      - label: I have searched **[Discussions](https://github.com/ExistentialAudio/BlackHole/discussions)** to see if the same question has already been asked
+      - label: I have searched **[Discussions](https://github.com/ExistentialAudio/WhiteHole/discussions)** to see if the same question has already been asked
         required: true
-      - label: This is a **bug** and not a question about audio routing or configuration, which should be posted in [Discussions](https://github.com/ExistentialAudio/BlackHole/discussions)
+      - label: This is a **bug** and not a question about audio routing or configuration, which should be posted in [Discussions](https://github.com/ExistentialAudio/WhiteHole/discussions)
         required: true
 - type: dropdown
   id: operating-system
@@ -35,9 +35,9 @@ body:
   validations:
     required: true
 - type: checkboxes
-  id: blackhole-config
+  id: whitehole-config
   attributes:
-    label: "BlackHole Build(s) Affected"
+    label: "WhiteHole Build(s) Affected"
     options:
       - label: "2 channel"
       - label: "16 channel"
@@ -75,4 +75,4 @@ body:
   id: screenshots
   attributes:
     label: Screenshots
-    description: "Please include screenshots of Audio MIDI Setup (BlackHole, your Multi-Output Device, etc.) and any app configuration windows in question. You can take screen shots by pressing <kbd>Shift</kbd><kbd>Cmd</kbd><kbd>4</kbd>, then attach the screenshot image files by dragging them onto the text entry area below:"
+    description: "Please include screenshots of Audio MIDI Setup (WhiteHole, your Multi-Output Device, etc.) and any app configuration windows in question. You can take screen shots by pressing <kbd>Shift</kbd><kbd>Cmd</kbd><kbd>4</kbd>, then attach the screenshot image files by dragging them onto the text entry area below:"

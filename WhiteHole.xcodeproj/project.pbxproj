@@ -10,12 +10,12 @@
 		3D083818284A7F1200C69403 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 3D89662F2849BF1A002AB3F0 /* VERSION */; };
 		3D083819284A7F1500C69403 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8FA1515FEAAB000F04B50 /* README.md */; };
 		3D88D48F285BBA5800629399 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D88D48E285BBA5800629399 /* main.c */; };
-		3D89663F2849C318002AB3F0 /* BlackHole.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D616EF215B8C82500D598BD /* BlackHole.c */; };
+		3D89663F2849C318002AB3F0 /* WhiteHole.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D616EF215B8C82500D598BD /* WhiteHole.c */; };
 		3D8966412849C318002AB3F0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6C8E45275E92B40030C104 /* Accelerate.framework */; };
 		3D8966422849C318002AB3F0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477EC157823CF00412279 /* CoreAudio.framework */; };
 		3D8966432849C318002AB3F0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477AC1578168D00412279 /* CoreFoundation.framework */; };
 		3D8966462849C318002AB3F0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCADB233FAE0500101681 /* LICENSE */; };
-		3D8966472849C318002AB3F0 /* BlackHole.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCAD9233F235500101681 /* BlackHole.icns */; };
+		3D8966472849C318002AB3F0 /* WhiteHole.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCAD9233F235500101681 /* WhiteHole.icns */; };
 		3D8966482849C318002AB3F0 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 039FF2572341B6E800400D7A /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +33,9 @@
 
 /* Begin PBXFileReference section */
 		039FF2572341B6E800400D7A /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		03FDCAD9233F235500101681 /* BlackHole.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BlackHole.icns; sourceTree = "<group>"; };
+		03FDCAD9233F235500101681 /* WhiteHole.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WhiteHole.icns; sourceTree = "<group>"; };
 		03FDCADB233FAE0500101681 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2D616EF215B8C82500D598BD /* BlackHole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BlackHole.c; sourceTree = "<group>"; };
+		2D616EF215B8C82500D598BD /* WhiteHole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WhiteHole.c; sourceTree = "<group>"; };
 		2D7477AC1578168D00412279 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2D7477EC157823CF00412279 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		2DA8FA1515FEAAB000F04B50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -44,13 +44,13 @@
 		3D083806284A7BB000C69403 /* conclusion.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = conclusion.html; sourceTree = "<group>"; };
 		3D083807284A7BB000C69403 /* requirements.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = requirements.xml; sourceTree = "<group>"; };
 		3D083808284A7BB000C69403 /* welcome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = welcome.html; sourceTree = "<group>"; };
-		3D08380E284A7DE100C69403 /* BlackHole.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BlackHole.plist; sourceTree = "<group>"; };
+		3D08380E284A7DE100C69403 /* WhiteHole.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WhiteHole.plist; sourceTree = "<group>"; };
 		3D08381B284AA8EE00C69403 /* create_installer.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = create_installer.sh; sourceTree = "<group>"; };
 		3D6C8E45275E92B40030C104 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		3D88D48C285BBA5800629399 /* BlackHoleTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlackHoleTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D88D48C285BBA5800629399 /* WhiteHoleTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhiteHoleTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D88D48E285BBA5800629399 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3D89662F2849BF1A002AB3F0 /* VERSION */ = {isa = PBXFileReference; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
-		3D89664D2849C318002AB3F0 /* BlackHole.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHole.driver; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D89664D2849C318002AB3F0 /* WhiteHole.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteHole.driver; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8966882849D45F002AB3F0 /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
 		3D8966892849D45F002AB3F0 /* preinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,14 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D616EF015B8C82500D598BD /* BlackHole */ = {
+		2D616EF015B8C82500D598BD /* WhiteHole */ = {
 			isa = PBXGroup;
 			children = (
-				3D08380E284A7DE100C69403 /* BlackHole.plist */,
-				03FDCAD9233F235500101681 /* BlackHole.icns */,
-				2D616EF215B8C82500D598BD /* BlackHole.c */,
+				3D08380E284A7DE100C69403 /* WhiteHole.plist */,
+				03FDCAD9233F235500101681 /* WhiteHole.icns */,
+				2D616EF215B8C82500D598BD /* WhiteHole.c */,
 			);
-			path = BlackHole;
+			path = WhiteHole;
 			sourceTree = "<group>";
 		};
 		2D74779B1578162B00412279 = {
@@ -94,8 +94,8 @@
 				2DA8FA1515FEAAB000F04B50 /* README.md */,
 				03FDCADB233FAE0500101681 /* LICENSE */,
 				039FF2572341B6E800400D7A /* CHANGELOG.md */,
-				2D616EF015B8C82500D598BD /* BlackHole */,
-				3D88D48D285BBA5800629399 /* BlackHoleTests */,
+				2D616EF015B8C82500D598BD /* WhiteHole */,
+				3D88D48D285BBA5800629399 /* WhiteHoleTests */,
 				2D7477AB1578168D00412279 /* Frameworks */,
 				2D7477AA1578168D00412279 /* Products */,
 			);
@@ -104,8 +104,8 @@
 		2D7477AA1578168D00412279 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D89664D2849C318002AB3F0 /* BlackHole.driver */,
-				3D88D48C285BBA5800629399 /* BlackHoleTests */,
+				3D89664D2849C318002AB3F0 /* WhiteHole.driver */,
+				3D88D48C285BBA5800629399 /* WhiteHoleTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,12 +134,12 @@
 			path = Installer;
 			sourceTree = "<group>";
 		};
-		3D88D48D285BBA5800629399 /* BlackHoleTests */ = {
+		3D88D48D285BBA5800629399 /* WhiteHoleTests */ = {
 			isa = PBXGroup;
 			children = (
 				3D88D48E285BBA5800629399 /* main.c */,
 			);
-			path = BlackHoleTests;
+			path = WhiteHoleTests;
 			sourceTree = "<group>";
 		};
 		3D8966872849D45F002AB3F0 /* scripts */ = {
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D88D48B285BBA5800629399 /* BlackHoleTests */ = {
+		3D88D48B285BBA5800629399 /* WhiteHoleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D88D493285BBA5800629399 /* Build configuration list for PBXNativeTarget "BlackHoleTests" */;
+			buildConfigurationList = 3D88D493285BBA5800629399 /* Build configuration list for PBXNativeTarget "WhiteHoleTests" */;
 			buildPhases = (
 				3D88D488285BBA5800629399 /* Sources */,
 				3D88D489285BBA5800629399 /* Frameworks */,
@@ -166,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = BlackHoleTests;
-			productName = BlackHoleTests;
-			productReference = 3D88D48C285BBA5800629399 /* BlackHoleTests */;
+			name = WhiteHoleTests;
+			productName = WhiteHoleTests;
+			productReference = 3D88D48C285BBA5800629399 /* WhiteHoleTests */;
 			productType = "com.apple.product-type.tool";
 		};
-		3D89663D2849C318002AB3F0 /* BlackHole */ = {
+		3D89663D2849C318002AB3F0 /* WhiteHole */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D8966492849C318002AB3F0 /* Build configuration list for PBXNativeTarget "BlackHole" */;
+			buildConfigurationList = 3D8966492849C318002AB3F0 /* Build configuration list for PBXNativeTarget "WhiteHole" */;
 			buildPhases = (
 				3D89663E2849C318002AB3F0 /* Sources */,
 				3D8966402849C318002AB3F0 /* Frameworks */,
@@ -183,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = BlackHole;
+			name = WhiteHole;
 			productName = AudioNULLDriver;
-			productReference = 3D89664D2849C318002AB3F0 /* BlackHole.driver */;
+			productReference = 3D89664D2849C318002AB3F0 /* WhiteHole.driver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D7477A01578162B00412279 /* Build configuration list for PBXProject "BlackHole" */;
+			buildConfigurationList = 2D7477A01578162B00412279 /* Build configuration list for PBXProject "WhiteHole" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,8 +219,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D89663D2849C318002AB3F0 /* BlackHole */,
-				3D88D48B285BBA5800629399 /* BlackHoleTests */,
+				3D89663D2849C318002AB3F0 /* WhiteHole */,
+				3D88D48B285BBA5800629399 /* WhiteHoleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8966462849C318002AB3F0 /* LICENSE in Resources */,
-				3D8966472849C318002AB3F0 /* BlackHole.icns in Resources */,
+				3D8966472849C318002AB3F0 /* WhiteHole.icns in Resources */,
 				3D8966482849C318002AB3F0 /* CHANGELOG.md in Resources */,
 				3D083818284A7F1200C69403 /* VERSION in Resources */,
 				3D083819284A7F1500C69403 /* README.md in Resources */,
@@ -253,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D89663F2849C318002AB3F0 /* BlackHole.c in Sources */,
+				3D89663F2849C318002AB3F0 /* WhiteHole.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,11 +527,11 @@
 					"$(inherited)",
 					"DEBUG=0",
 				);
-				INFOPLIST_FILE = BlackHole/BlackHole.plist;
+				INFOPLIST_FILE = WhiteHole/WhiteHole.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.6.1;
-				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole;
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.WhiteHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = driver;
 			};
@@ -547,11 +547,11 @@
 					"$(inherited)",
 					"DEBUG=1",
 				);
-				INFOPLIST_FILE = BlackHole/BlackHole.plist;
+				INFOPLIST_FILE = WhiteHole/WhiteHole.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.6.1;
-				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole;
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.WhiteHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = driver;
 			};
@@ -567,11 +567,11 @@
 					"$(inherited)",
 					"DEBUG=1",
 				);
-				INFOPLIST_FILE = BlackHole/BlackHole.plist;
+				INFOPLIST_FILE = WhiteHole/WhiteHole.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.6.1;
-				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole;
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.WhiteHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = driver;
 			};
@@ -580,7 +580,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D7477A01578162B00412279 /* Build configuration list for PBXProject "BlackHole" */ = {
+		2D7477A01578162B00412279 /* Build configuration list for PBXProject "WhiteHole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D7477A21578162B00412279 /* Release */,
@@ -590,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D88D493285BBA5800629399 /* Build configuration list for PBXNativeTarget "BlackHoleTests" */ = {
+		3D88D493285BBA5800629399 /* Build configuration list for PBXNativeTarget "WhiteHoleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D88D490285BBA5800629399 /* Release */,
@@ -600,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D8966492849C318002AB3F0 /* Build configuration list for PBXNativeTarget "BlackHole" */ = {
+		3D8966492849C318002AB3F0 /* Build configuration list for PBXNativeTarget "WhiteHole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D89664A2849C318002AB3F0 /* Release */,

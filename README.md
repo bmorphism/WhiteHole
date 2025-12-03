@@ -1,16 +1,16 @@
-![BlackHole: Audio Loopback Driver](Images/blackhole-banner-830px.png)
+![WhiteHole: Audio Loopback Driver](Images/whitehole-banner-830px.png)
 
-# BlackHole: Audio Loopback Driver
+# WhiteHole: Audio Loopback Driver
 
 ![Platform: macOS](https://img.shields.io/badge/platform-macOS-lightgrey)
-[![Release](https://img.shields.io/github/v/release/ExistentialAudio/BlackHole)](https://github.com/ExistentialAudio/BlackHole/releases)
-[![License](https://img.shields.io/github/license/ExistentialAudio/BlackHole)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/ExistentialAudio/WhiteHole)](https://github.com/ExistentialAudio/WhiteHole/releases)
+[![License](https://img.shields.io/github/license/ExistentialAudio/WhiteHole)](LICENSE)
 [![Twitter](https://img.shields.io/badge/Follow%20on%20Twitter-1da1f2)](https://twitter.com/ExistentialAI)
 [![Facebook](https://img.shields.io/badge/Like%20on%20Facebook-4267B2)](https://www.facebook.com/Existential-Audio-103423234434751)
 
-BlackHole is a modern macOS virtual audio loopback driver that allows applications to pass audio to other applications with zero additional latency.
+WhiteHole is a modern macOS virtual audio loopback driver that allows applications to pass audio to other applications with zero additional latency.
 
-### [Download Installer](https://existential.audio/blackhole) 
+### [Download Installer](https://existential.audio/whitehole) 
 
 ### [Join the Discord Server](https://discord.gg/y8BWfnWRnn)
 
@@ -18,7 +18,7 @@ BlackHole is a modern macOS virtual audio loopback driver that allows applicatio
 
 ### Recall.ai - API for desktop recording
 
-If you’re looking for a desktop recording API, consider checking out [Recall.ai](https://www.recall.ai/product/desktop-recording-sdk?utm_source=github&utm_medium=sponsorship&utm_campaign=existentialaudio-blackhole), an API that records video, audio, and transcripts from Zoom, Google Meet, Microsoft Teams, in-person meetings, and more.
+If you’re looking for a desktop recording API, consider checking out [Recall.ai](https://www.recall.ai/product/desktop-recording-sdk?utm_source=github&utm_medium=sponsorship&utm_campaign=existentialaudio-whitehole), an API that records video, audio, and transcripts from Zoom, Google Meet, Microsoft Teams, in-person meetings, and more.
 
 To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 
@@ -31,7 +31,7 @@ To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 - [Developer Guides](#developer-guides)
 - [Feature Requests](#feature-requests)
 - [FAQ](#faq)
-- [Wiki](https://github.com/ExistentialAudio/BlackHole/wiki)
+- [Wiki](https://github.com/ExistentialAudio/WhiteHole/wiki)
 
 ## Features
 
@@ -50,29 +50,29 @@ To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 
 ### Option 1: Download Installer
 
-1. [Download the latest installer](https://existential.audio/blackhole)
+1. [Download the latest installer](https://existential.audio/whitehole)
 2. Close all running audio applications
 3. Open and install package
 
 ### Option 2: Install via Homebrew
 
-- 2ch: `brew install blackhole-2ch`
-- 16ch: `brew install blackhole-16ch`
-- 64ch: `brew install blackhole-64ch`
+- 2ch: `brew install whitehole-2ch`
+- 16ch: `brew install whitehole-16ch`
+- 64ch: `brew install whitehole-64ch`
 
 ## Uninstallation Instructions
 
 ### Option 1: Use Uninstaller
 
-- [Download BlackHole 2ch Uninstaller](https://existential.audio/downloads/BlackHole2chUninstaller.pkg)
-- [Download BlackHole 16ch Uninstaller](https://existential.audio/downloads/BlackHole16chUninstaller.pkg)
-- [Download BlackHole 64ch Uninstaller](https://existential.audio/downloads/BlackHole64chUninstaller.pkg)
+- [Download WhiteHole 2ch Uninstaller](https://existential.audio/downloads/WhiteHole2chUninstaller.pkg)
+- [Download WhiteHole 16ch Uninstaller](https://existential.audio/downloads/WhiteHole16chUninstaller.pkg)
+- [Download WhiteHole 64ch Uninstaller](https://existential.audio/downloads/WhiteHole64chUninstaller.pkg)
 
 ### Option 2: Manually Uninstall
 
-1. Delete the BlackHole driver with the terminal command:
+1. Delete the WhiteHole driver with the terminal command:
    
-    `rm -R /Library/Audio/Plug-Ins/HAL/BlackHoleXch.driver` 
+    `rm -R /Library/Audio/Plug-Ins/HAL/WhiteHoleXch.driver` 
    
    Be sure to replace `X` with either `2`, `16`, or `64`.
    
@@ -82,7 +82,7 @@ To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 
     `sudo killall -9 coreaudiod`
 
-For more specific details [visit the Wiki](https://github.com/ExistentialAudio/BlackHole/wiki/Uninstallation).
+For more specific details [visit the Wiki](https://github.com/ExistentialAudio/WhiteHole/wiki/Uninstallation).
 
 ## User Guides
 
@@ -102,7 +102,7 @@ For more specific details [visit the Wiki](https://github.com/ExistentialAudio/B
 
 ### Audacity
 
-- [Audacity Setup](https://github.com/ExistentialAudio/BlackHole/wiki/Audacity)
+- [Audacity Setup](https://github.com/ExistentialAudio/WhiteHole/wiki/Audacity)
 
 ### Reaper
 
@@ -110,17 +110,17 @@ For more specific details [visit the Wiki](https://github.com/ExistentialAudio/B
 
 ### Record System Audio
 
-1. [Setup Multi-Output Device](https://github.com/ExistentialAudio/BlackHole/wiki/Multi-Output-Device)
+1. [Setup Multi-Output Device](https://github.com/ExistentialAudio/WhiteHole/wiki/Multi-Output-Device)
 2. In `Audio MIDI Setup` → `Audio Devices` right-click on the newly created Multi-Output and select "Use This Device For Sound Output"
-3. Open digital audio workstation (DAW) such as GarageBand and set input device to "BlackHole" 
+3. Open digital audio workstation (DAW) such as GarageBand and set input device to "WhiteHole" 
 4. Set track to input from channel 1-2
 5. Play audio from another application and monitor or record in your DAW
 
 ### Route Audio Between Applications
 
-1. Set output driver to "BlackHole" in sending application
+1. Set output driver to "WhiteHole" in sending application
 2. Output audio to any channel
-3. Open receiving application and set input device to "BlackHole" 
+3. Open receiving application and set input device to "WhiteHole" 
 4. Input audio from the corresponding output channels
 
 ## Developer Guides
@@ -129,14 +129,14 @@ For more specific details [visit the Wiki](https://github.com/ExistentialAudio/B
 Please support our hard work and continued development. To request a license [contact Existential Audio](mailto:devinroth@existential.audio).
 
 ### Build & Install
-After building, to install BlackHole:
+After building, to install WhiteHole:
 
-1. Copy or move the built `BlackHoleXch.driver` bundle to `/Library/Audio/Plug-Ins/HAL`
+1. Copy or move the built `WhiteHoleXch.driver` bundle to `/Library/Audio/Plug-Ins/HAL`
 2. Restart CoreAudio using `sudo killall -9 coreaudiod`
 
-### Customizing BlackHole
+### Customizing WhiteHole
 
-The following pre-compiler constants may be used to easily customize a build of BlackHole.
+The following pre-compiler constants may be used to easily customize a build of WhiteHole.
 
 ```
 kDriver_Name
@@ -164,15 +164,15 @@ Example:
 
 ```bash
 xcodebuild \
-  -project BlackHole.xcodeproj \
+  -project WhiteHole.xcodeproj \
   GCC_PREPROCESSOR_DEFINITIONS='$GCC_PREPROCESSOR_DEFINITIONS kSomeConstant=value'
 ```
 
 Be sure to escape any quotation marks when using strings. 
 
-### Renaming BlackHole
+### Renaming WhiteHole
 
-To customize BlackHole it is required to change the following constants. 
+To customize WhiteHole it is required to change the following constants. 
 - `kDriver_Name`
 - `kPlugIn_BundleID` (note that this must match the target bundleID)
 - `kPlugIn_Icon`
@@ -180,12 +180,12 @@ To customize BlackHole it is required to change the following constants.
 These can specified as pre-compiler constants using ```xcodebuild```.
 
 ```bash
-driverName="BlackHole"
-bundleID="audio.existential.BlackHole"
-icon="BlackHole.icns"
+driverName="WhiteHole"
+bundleID="audio.existential.WhiteHole"
+icon="WhiteHole.icns"
 
 xcodebuild \
-  -project BlackHole.xcodeproj \
+  -project WhiteHole.xcodeproj \
   -configuration Release \
   PRODUCT_BUNDLE_IDENTIFIER=$bundleID \
   GCC_PREPROCESSOR_DEFINITIONS='$GCC_PREPROCESSOR_DEFINITIONS
@@ -196,15 +196,15 @@ xcodebuild \
 
 ### Customizing Channels, Latency, and Sample Rates
 
-`kNumber_Of_Channels` is used to set the number of channels. Be careful when specifying high channel counts. Although BlackHole is designed to be extremely efficient at higher channel counts it's possible that your computer might not be able to keep up. Sample rates play a role as well. Don't use high sample rates with a high number of channels. Some applications don't know how to handle high channel counts. Proceed with caution.
+`kNumber_Of_Channels` is used to set the number of channels. Be careful when specifying high channel counts. Although WhiteHole is designed to be extremely efficient at higher channel counts it's possible that your computer might not be able to keep up. Sample rates play a role as well. Don't use high sample rates with a high number of channels. Some applications don't know how to handle high channel counts. Proceed with caution.
 
-`kLatency_Frame_Size` is how much time in frames that the driver has to process incoming and outgoing audio. It can be used to delay the audio inside of BlackHole up to a maximum of 65536 frames. This may be helpful if using BlackHole with a high channel count. 
+`kLatency_Frame_Size` is how much time in frames that the driver has to process incoming and outgoing audio. It can be used to delay the audio inside of WhiteHole up to a maximum of 65536 frames. This may be helpful if using WhiteHole with a high channel count. 
 
 `kSampleRates` set the sample rate or sample rates of the audio device. If using multiple sample rates separate each with a comma (`,`). For example: `kSampleRates='44100,48000'`.
 
 ### Mirror Device
 
-By default BlackHole has a hidden mirrored audio device. The devices may be customized using the following constants. 
+By default WhiteHole has a hidden mirrored audio device. The devices may be customized using the following constants. 
 
 ```
 // Original Device
@@ -218,7 +218,7 @@ kDevice2_HasInput
 kDevice2_HasOutput
 ```
 
-When all are set to true a 2nd BlackHole will show up that works exactly the same. The inputs and outputs are mirrored so the outputs from both devices go to the inputs of both devices.
+When all are set to true a 2nd WhiteHole will show up that works exactly the same. The inputs and outputs are mirrored so the outputs from both devices go to the inputs of both devices.
 
 This is useful if you need a separate device for input and output.
 
@@ -236,7 +236,7 @@ kDevice2_HasInput=false
 kDevice2_HasOutput=true
 ```
 
-In this situation we have two BlackHole devices. One will have inputs only and the other will have outputs only.
+In this situation we have two WhiteHole devices. One will have inputs only and the other will have outputs only.
 
 One way to use this in projects is to hide the mirrored device and use it behind the scenes. That way the user will see an input only device while routing audio through to the output behind them scenes. 
 
@@ -244,47 +244,47 @@ Hidden audio devices can be accessed using `kAudioHardwarePropertyTranslateUIDTo
 
 ### Continuous Integration / Continuous Deployment
 
-BlackHole can be integrated into your CI/CD. Take a look at the [create_installer.sh](https://github.com/ExistentialAudio/BlackHole/blob/master/Installer/create_installer.sh) shell script to see how the installer is built, signed and notarized.
+WhiteHole can be integrated into your CI/CD. Take a look at the [create_installer.sh](https://github.com/ExistentialAudio/WhiteHole/blob/master/Installer/create_installer.sh) shell script to see how the installer is built, signed and notarized.
 
 ## Feature Requests
 
 If you are interested in any of the following features please leave a comment in the linked issue. To request a features not listed please create a new issue.
 
-- [Sync Clock with other Audio Devices](https://github.com/ExistentialAudio/BlackHole/issues/27) in development see v0.3.0
-- [Output Blackhole to other Audio Device](https://github.com/ExistentialAudio/BlackHole/issues/40)
-- [Add Support for AU Plug-ins](https://github.com/ExistentialAudio/BlackHole/issues/18)
-- [Inter-channel routing](https://github.com/ExistentialAudio/BlackHole/issues/13)
-- [Record Directly to File](https://github.com/ExistentialAudio/BlackHole/issues/8)
-- [Configuration Options Menu](https://github.com/ExistentialAudio/BlackHole/issues/7)
-- [Support for Additional Bit Depths](https://github.com/ExistentialAudio/BlackHole/issues/42)
+- [Sync Clock with other Audio Devices](https://github.com/ExistentialAudio/WhiteHole/issues/27) in development see v0.3.0
+- [Output Whitehole to other Audio Device](https://github.com/ExistentialAudio/WhiteHole/issues/40)
+- [Add Support for AU Plug-ins](https://github.com/ExistentialAudio/WhiteHole/issues/18)
+- [Inter-channel routing](https://github.com/ExistentialAudio/WhiteHole/issues/13)
+- [Record Directly to File](https://github.com/ExistentialAudio/WhiteHole/issues/8)
+- [Configuration Options Menu](https://github.com/ExistentialAudio/WhiteHole/issues/7)
+- [Support for Additional Bit Depths](https://github.com/ExistentialAudio/WhiteHole/issues/42)
 
 ## FAQ
 
-### Why isn't BlackHole showing up in the Applications folder?
+### Why isn't WhiteHole showing up in the Applications folder?
 
-BlackHole is a virtual audio loopback driver. It only shows up in `Audio MIDI Setup`, `Sound Preferences`, or other audio applications.
+WhiteHole is a virtual audio loopback driver. It only shows up in `Audio MIDI Setup`, `Sound Preferences`, or other audio applications.
 
-### How can I listen to the audio and use BlackHole at the same time?
+### How can I listen to the audio and use WhiteHole at the same time?
 
-See [Setup a Multi-Output Device](https://github.com/ExistentialAudio/BlackHole/wiki/Multi-Output-Device).
+See [Setup a Multi-Output Device](https://github.com/ExistentialAudio/WhiteHole/wiki/Multi-Output-Device).
 
-### What bit depth does BlackHole use, and can I change it?
+### What bit depth does WhiteHole use, and can I change it?
 
-BlackHole uses 32-bit float bit depth since macOS Core Audio natively uses 32-bit at the system level. This provides the broadest compatibility and greatest audio headroom.
+WhiteHole uses 32-bit float bit depth since macOS Core Audio natively uses 32-bit at the system level. This provides the broadest compatibility and greatest audio headroom.
 
-This format is lossless for up to 24-bit integer. All applications should be able to playback and record audio, and do not require adjusting bit depth at the BlackHole driver level.
+This format is lossless for up to 24-bit integer. All applications should be able to playback and record audio, and do not require adjusting bit depth at the WhiteHole driver level.
 
 ### How can I change the volume of a Multi-Output device?
 
 Unfortunately macOS does not support changing the volume of a Multi-Output device but you can set the volume of individual devices in Audio MIDI Setup. 
 
-### Why is nothing playing through BlackHole? 
+### Why is nothing playing through WhiteHole? 
 
 - Check `System Preferences` → `Security & Privacy` → `Privacy` → `Microphone` to make sure your digital audio workstation (DAW) application has microphone access. 
 
-- Check that the volume is all the way up on BlackHole input and output in ``Audio MIDI Setup``.
+- Check that the volume is all the way up on WhiteHole input and output in ``Audio MIDI Setup``.
 
-- If you are using a multi-output device, due to issues with macOS the Built-in Output must be enabled and listed as the top device in the Multi-Output. [See here for details](https://github.com/ExistentialAudio/BlackHole/wiki/Multi-Output-Device#4-select-output-devices).
+- If you are using a multi-output device, due to issues with macOS the Built-in Output must be enabled and listed as the top device in the Multi-Output. [See here for details](https://github.com/ExistentialAudio/WhiteHole/wiki/Multi-Output-Device#4-select-output-devices).
 
 ### Why is audio glitching after X minutes when using a multi-output or an aggregate?
 
@@ -296,7 +296,7 @@ Unfortunately macOS does not support changing the volume of a Multi-Output devic
 
 ### What Apps Don't Work with Multi-Outputs?
 
-Unfortunately multi-outputs can be buggy and some apps won't work with them at all. Here is a list of known ones. If additional incompatible applications are found, please report them by opening an [issue](https://github.com/ExistentialAudio/BlackHole/issues).
+Unfortunately multi-outputs can be buggy and some apps won't work with them at all. Here is a list of known ones. If additional incompatible applications are found, please report them by opening an [issue](https://github.com/ExistentialAudio/WhiteHole/issues).
 
 - Apple Podcasts
 - Apple Messages
@@ -304,13 +304,173 @@ Unfortunately multi-outputs can be buggy and some apps won't work with them at a
 
 ### AirPods with an Aggregate/Multi-Output is not working.
 
-The microphone from AirPods runs at a lower sample rate which means it should not be used as the primary/clock device in an Aggregate or Multi-Output device. The solution is to use your built-in speakers (and just mute them) or BlackHole 2ch as the primary/clock device. BlackHole 16ch will not work as the primary since the primary needs to have 2ch. 
+The microphone from AirPods runs at a lower sample rate which means it should not be used as the primary/clock device in an Aggregate or Multi-Output device. The solution is to use your built-in speakers (and just mute them) or WhiteHole 2ch as the primary/clock device. WhiteHole 16ch will not work as the primary since the primary needs to have 2ch. 
 
-Read [this discussion](https://github.com/ExistentialAudio/BlackHole/issues/146) for more details.
+Read [this discussion](https://github.com/ExistentialAudio/WhiteHole/issues/146) for more details.
 
-### Can I integrate BlackHole into my app?
+### Can I integrate WhiteHole into my app?
 
-BlackHole is licensed under GPL-3.0. You can use BlackHole as long as your app is also licensed as GPL-3.0. For all other applications please [contact Existential Audio directly](mailto:devinroth@existential.audio).
+WhiteHole is licensed under GPL-3.0. You can use WhiteHole as long as your app is also licensed as GPL-3.0. For all other applications please [contact Existential Audio directly](mailto:devinroth@existential.audio).
+
+## Roadmap: Colored Stream Routing
+
+### bmorphism Fork Extensions
+
+This fork extends WhiteHole with categorical audio routing based on stream "colors" (types). Streams only mix when their colors are compatible, enabling type-safe audio composition.
+
+#### Phase 1: Color-Tagged Streams
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Stream Color Algebra                                           │
+│                                                                 │
+│  Each audio stream carries a "color" tag:                       │
+│  • Color = SHA3(source_app || channel_config || sample_rate)    │
+│  • O(1) membership test via Bloom filter or Cuckoo filter       │
+│                                                                 │
+│  Mixing Rule:                                                   │
+│  mix : Color × Color → Maybe Color                              │
+│  mix(c1, c2) = Just (c1 ⊕ c2)  if compatible(c1, c2)            │
+│              = Nothing          otherwise                       │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Implementation:**
+- `kStreamColor` preprocessor constant for static color assignment
+- Runtime color negotiation via `kAudioDevicePropertyStreamConfiguration`
+- Bloom filter with k=7 hash functions (seed 1069) for O(1) compatibility check
+
+#### Phase 2: Maybe Monad Rejection
+
+```c
+// Stream mixing with Maybe semantics
+typedef struct {
+    bool is_just;           // Nothing = incompatible, Just = mixed result
+    float* buffer;          // Audio data (NULL if Nothing)
+    uint32_t color_hash;    // Combined color on success
+} MaybeAudioBuffer;
+
+MaybeAudioBuffer mix_streams(AudioBuffer* a, AudioBuffer* b) {
+    if (!colors_compatible(a->color, b->color)) {
+        return (MaybeAudioBuffer){ .is_just = false, .buffer = NULL };
+    }
+    // Mix and return Just(combined)
+    return (MaybeAudioBuffer){
+        .is_just = true,
+        .buffer = mix_buffers(a, b),
+        .color_hash = a->color ^ b->color  // XOR for balanced ternary compat
+    };
+}
+```
+
+**Rejection Modes:**
+- `kRejectMode_Silent` - Incompatible streams produce silence
+- `kRejectMode_Passthrough` - First stream wins, second rejected
+- `kRejectMode_Error` - Return error to application
+
+#### Phase 3: InterruptOperad
+
+The `InterruptOperad` enables compositional interrupt handling for audio streams:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  InterruptOperad : Stream Composition with Priorities           │
+│                                                                 │
+│  Operations:                                                    │
+│  • interrupt : Priority → Stream → Stream → Stream              │
+│    High-priority stream interrupts low-priority                 │
+│                                                                 │
+│  • duck : Float → Stream → Stream → Stream                      │
+│    Reduce volume of background stream when foreground active    │
+│                                                                 │
+│  • gate : Predicate → Stream → Maybe Stream                     │
+│    Pass stream only when predicate satisfied                    │
+│                                                                 │
+│  Composition Laws (Operad Axioms):                              │
+│  • Associativity: (f ∘ g) ∘ h = f ∘ (g ∘ h)                     │
+│  • Identity: id ∘ f = f = f ∘ id                                │
+│  • Equivariance: σ(f ∘ g) = σ(f) ∘ σ(g)                         │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Use Cases:**
+- Voice detection interrupts music playback (Aqua Voice integration)
+- Notification sounds duck background audio
+- Conference call audio gates through only when unmuted
+
+#### Phase 4: Balanced Ternary Stream Tagging
+
+Stream colors encoded in balanced ternary (trits: -1, 0, +1):
+
+```
+Color Tag: 7 trits (seed 1069 = [+1, -1, -1, +1, +1, +1, +1])
+
+Position meanings:
+  [0]: Source type     (-1=system, 0=app, +1=hardware)
+  [1]: Channel count   (-1=mono, 0=stereo, +1=multichannel)
+  [2]: Sample rate     (-1=low, 0=standard, +1=high)
+  [3]: Bit depth       (-1=16bit, 0=24bit, +1=32bit)
+  [4]: Latency class   (-1=realtime, 0=normal, +1=buffered)
+  [5]: Priority        (-1=background, 0=normal, +1=foreground)
+  [6]: Mix permission  (-1=reject, 0=conditional, +1=allow)
+
+Compatibility: Streams mix iff Hamming distance ≤ 2
+```
+
+### Information-Theoretic Foundation
+
+WhiteHole as a cognitive time-binding device:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Audio Information Flow                                         │
+│                                                                 │
+│  Physical: Sound waves → microphone → ADC → bits → DAC → waves  │
+│  Logical:  Pattern captured, stored, routed, replayed           │
+│                                                                 │
+│  The "white hole" metaphor:                                     │
+│  • Black hole: Information falls IN, entropy increases          │
+│  • White hole: Information flows OUT, patterns persist          │
+│                                                                 │
+│  WhiteHole driver = Information channel that preserves          │
+│  patterns across the entropic arrow of time                     │
+│                                                                 │
+│  Entropic Gravity Connection (Verlinde 2010, Carney 2025):      │
+│  • Gravity emerges from entropy maximization                    │
+│  • Audio routing = information geodesic through device space    │
+│  • Zero latency = minimal action principle                      │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Build with Color Extensions
+
+```bash
+xcodebuild \
+  -project WhiteHole.xcodeproj \
+  -configuration Release \
+  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO \
+  GCC_PREPROCESSOR_DEFINITIONS='$GCC_PREPROCESSOR_DEFINITIONS
+    kEnableColorRouting=1
+    kBloomFilterSeed=1069
+    kDefaultRejectMode=kRejectMode_Silent'
+```
+
+### Version Control
+
+This fork uses both git and [pijul](https://pijul.org/) for parallel versioning:
+- **git**: Linear history, GitHub integration
+- **pijul**: Patch-based, commutative merges, category-theoretic foundations
+
+```bash
+# View pijul patches
+nix-shell -p pijul --run "pijul log"
+
+# Record changes
+nix-shell -p pijul --run "pijul record -m 'description'"
+```
 
 ## Links and Resources
 ### [MultiSoundChanger](https://github.com/rlxone/MultiSoundChanger)

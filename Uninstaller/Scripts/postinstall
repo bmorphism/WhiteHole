@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file="/Library/Audio/Plug-Ins/HAL/BlackHole256ch.driver"
+file="/Library/Audio/Plug-Ins/HAL/WhiteHole256ch.driver"
 
 if [ -d "$file" ] ; then
     sudo rm -R "$file"

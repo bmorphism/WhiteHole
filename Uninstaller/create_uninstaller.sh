@@ -6,10 +6,10 @@ notarize=true # To skip notarization, set this to false
 notarizeProfile="notarize" # ⚠️ Replace this with your own notarytool keychain profile name
 
 # Basic Validation
-if [ ! -d BlackHole.xcodeproj ]; then
-    echo "This script must be run from the BlackHole repo root folder."
+if [ ! -d WhiteHole.xcodeproj ]; then
+    echo "This script must be run from the WhiteHole repo root folder."
     echo "For example:"
-    echo "  cd /path/to/BlackHole"
+    echo "  cd /path/to/WhiteHole"
     echo "  ./Uninstaller/create_uninstaller.sh"
     exit 1
 fi
@@ -20,7 +20,7 @@ for channels in 2 16 64 128 256; do
 	echo \
 	'#!/bin/bash
 
-file="/Library/Audio/Plug-Ins/HAL/BlackHole'$channels'ch.driver"
+file="/Library/Audio/Plug-Ins/HAL/WhiteHole'$channels'ch.driver"
 
 if [ -d "$file" ] ; then
     sudo rm -R "$file"
@@ -30,9 +30,9 @@ fi' > Uninstaller/Scripts/postinstall
 	chmod 755 Uninstaller/Scripts/postinstall
 
 	# Build .pkg
-    packageName='Uninstaller/BlackHole'$channels'ch-Uninstaller.pkg'
+    packageName='Uninstaller/WhiteHole'$channels'ch-Uninstaller.pkg'
 
-    pkgbuild --nopayload --scripts Uninstaller/Scripts --sign $devTeamID --identifier 'audio.existential.BlackHole'$channels'ch.Uninstaller' $packageName
+    pkgbuild --nopayload --scripts Uninstaller/Scripts --sign $devTeamID --identifier 'audio.existential.WhiteHole'$channels'ch.Uninstaller' $packageName
 
     # Notarize and Staple
     if [ "$notarize" = true ]; then

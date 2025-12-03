@@ -1,4 +1,4 @@
-#  BlackHole Changelog
+#  WhiteHole Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Feature Requests
 
 - Add support for additional virtual formats. 24-bit, 16-bit.
-- Sync BlackHole audio clock with any audio device.
+- Sync WhiteHole audio clock with any audio device.
 - Create multi-output / aggregate device with installer.
 - Keep track of which apps are connected to the driver.
 
@@ -56,12 +56,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- Merged BlackHole.h into BlackHole.c for easier testing.
+- Merged WhiteHole.h into WhiteHole.c for easier testing.
 - Fixed control size bugs.
 
 ### Added
 
-- Added BlackHoleTests target and relevant files.
+- Added WhiteHoleTests target and relevant files.
 
 ## [0.4.0] - 2021-06-10
 
@@ -102,7 +102,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- Fix clock bug. Fixes issues with BlackHole crashing on Apple Silicon.
+- Fix clock bug. Fixes issues with WhiteHole crashing on Apple Silicon.
 
 ## [0.2.8] - 2020-12-26
 
@@ -117,7 +117,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fix bug that caused crashes in certain situations. (Issue #206)
 - Disable Volume and Mute controls on input. They are only needed on the output. 
 - Fix clock bug.
-- Automatically change UIDs to include the number of channels. Makes it easier to build and install multiple versions. Ex: BlackHole2ch_UID
+- Automatically change UIDs to include the number of channels. Makes it easier to build and install multiple versions. Ex: WhiteHole2ch_UID
 
 ## [0.2.7] - 2020-08-08
 
@@ -134,8 +134,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- Fixed BlackHole buffer allocation error when switching audio devices from DAW.
-- Fixed BlackHole buffer allocation error when sleeping.
+- Fixed WhiteHole buffer allocation error when switching audio devices from DAW.
+- Fixed WhiteHole buffer allocation error when sleeping.
 - Audio Midi Setup speaker configuration now saves preferences.
 
 ## [0.2.5] - 2019-11-29
@@ -148,7 +148,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- Ability to mute and changed volume on input and out of BlackHole. 
+- Ability to mute and changed volume on input and out of WhiteHole. 
 
 ## [0.2.3] - 2019-11-22
 
