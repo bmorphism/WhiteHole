@@ -11,6 +11,7 @@
 		3D083819284A7F1500C69403 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8FA1515FEAAB000F04B50 /* README.md */; };
 		3D88D48F285BBA5800629399 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D88D48E285BBA5800629399 /* main.c */; };
 		3D89663F2849C318002AB3F0 /* WhiteHole.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D616EF215B8C82500D598BD /* WhiteHole.c */; };
+		B0C01069284C0000001069FF /* WhiteHoleColor.c in Sources */ = {isa = PBXBuildFile; fileRef = B0C01069284C0001001069FF /* WhiteHoleColor.c */; };
 		3D8966412849C318002AB3F0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6C8E45275E92B40030C104 /* Accelerate.framework */; };
 		3D8966422849C318002AB3F0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477EC157823CF00412279 /* CoreAudio.framework */; };
 		3D8966432849C318002AB3F0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477AC1578168D00412279 /* CoreFoundation.framework */; };
@@ -36,6 +37,8 @@
 		03FDCAD9233F235500101681 /* WhiteHole.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WhiteHole.icns; sourceTree = "<group>"; };
 		03FDCADB233FAE0500101681 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2D616EF215B8C82500D598BD /* WhiteHole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WhiteHole.c; sourceTree = "<group>"; };
+		B0C01069284C0001001069FF /* WhiteHoleColor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WhiteHoleColor.c; sourceTree = "<group>"; };
+		B0C01069284C0002001069FF /* WhiteHoleColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteHoleColor.h; sourceTree = "<group>"; };
 		2D7477AC1578168D00412279 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2D7477EC157823CF00412279 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		2DA8FA1515FEAAB000F04B50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				3D08380E284A7DE100C69403 /* WhiteHole.plist */,
 				03FDCAD9233F235500101681 /* WhiteHole.icns */,
 				2D616EF215B8C82500D598BD /* WhiteHole.c */,
+				B0C01069284C0001001069FF /* WhiteHoleColor.c */,
+				B0C01069284C0002001069FF /* WhiteHoleColor.h */,
 			);
 			path = WhiteHole;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D89663F2849C318002AB3F0 /* WhiteHole.c in Sources */,
+				B0C01069284C0000001069FF /* WhiteHoleColor.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
