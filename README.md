@@ -472,6 +472,47 @@ nix-shell -p pijul --run "pijul log"
 nix-shell -p pijul --run "pijul record -m 'description'"
 ```
 
+## AFL Integration (T.V. Raman Auditory Formatting)
+
+This fork integrates T.V. Raman's Auditory Formatting Language (AFL) concepts for categorical audio routing.
+
+### Quick Start
+
+```bash
+# From ies repo - emit audio with AFL parameters
+bb multimodal-emit.clj emit '(+ x y)'
+
+# Full Gemini learning loop
+bb afl-gemini-learn.clj learn '(+ (* x x) (* y y))'
+```
+
+### AFL → StreamColor Mapping
+
+| AFL Parameter | Trit Position | -1 | 0 | +1 |
+|---------------|---------------|-----|-----|-----|
+| pitch | 0 | <300Hz | 300-700Hz | >700Hz |
+| rate | 1 | <0.7x | 0.7-1.3x | >1.3x |
+| volume | 2 | <0.3 | 0.3-0.7 | >0.7 |
+| richness | 3 | <0.5 | 0.5-1.5 | >1.5 |
+| stress | 4 | <0.3 | 0.3-0.7 | >0.7 |
+
+### SplitMixTernary Constants
+
+```c
+#define GOLDEN 0x9e3779b97f4a7c15ULL
+#define SEED   0x42D  // 1069 = [+1,-1,-1,+1,+1,+1,+1] balanced ternary
+```
+
+### Files
+
+| File | Stream | Purpose |
+|------|--------|---------|
+| `AFLBridge.h/c` | 🔴 MINUS | AFL JSON → StreamColor |
+| `AFLEmitter.h/c` | 🟢 PLUS | WhiteHole → AFL |
+| `AFL_INTEGRATION.md` | 🟡 ERGODIC | Documentation |
+
+See [AFL_INTEGRATION.md](AFL_INTEGRATION.md) for full details.
+
 ## Links and Resources
 ### [MultiSoundChanger](https://github.com/rlxone/MultiSoundChanger)
 A small tool for changing sound volume even for aggregate devices cause native sound volume controller can't change volume of aggregate devices
